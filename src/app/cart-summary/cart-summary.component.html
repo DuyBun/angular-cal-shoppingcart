@@ -1,0 +1,21 @@
+<div class="summary">
+  <ul>
+    <li>
+      Subtotal
+      <span>{{ subTotal | currency: "EUR":"symbol":"1.0-2":"fr" }}</span>
+    </li>
+    <li>
+      Tax <span>{{ tax | currency: "EUR":"symbol":"1.0-2":"fr"}}</span>
+    </li>
+    <li>
+      Discount <span>{{ discount | currency: "EUR":"symbol":"1.0-2":"fr" }}</span>
+    </li>
+    <li class="total">
+      Total <span>{{ subTotal - discount + tax | currency: "EUR":"symbol":"1.0-2":"fr"}}</span>
+    </li>
+  </ul>
+</div>
+
+<div class="checkout">
+  <button type="button">Check Out</button>
+</div>
