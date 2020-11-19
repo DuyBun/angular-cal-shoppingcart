@@ -7,7 +7,7 @@
     <li>
       Tax <span>{{ tax | currency: "EUR":"symbol":"1.0-2":"fr"}}</span>
     </li>
-    <li>
+    <li *ngIf="discount > 0">
       Discount <span>{{ discount | currency: "EUR":"symbol":"1.0-2":"fr" }}</span>
     </li>
     <li class="total">

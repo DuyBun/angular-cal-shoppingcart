@@ -7,6 +7,7 @@ import { CartHeaderComponent } from './cart-header/cart-header.component';
 import { CartSummaryComponent } from './cart-summary/cart-summary.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { PromoCodeComponent } from './promo-code/promo-code.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PromoCodeComponent } from './promo-code/promo-code.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
